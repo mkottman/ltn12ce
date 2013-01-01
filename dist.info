@@ -1,0 +1,10 @@
+--- This file is part of LuaDist project
+
+name = "ltn12ce"
+version = "0.1"
+
+desc = "ltn12ce is a compression and encryption library implementing ltn12 - filters, sources and sinks"
+author = "Michal Kottman"
+license = "GPL"
+url = "https://github.com/mkottman/ltn12ce"
+maintainer = "Michal Kottman"
