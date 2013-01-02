@@ -18,14 +18,25 @@ int luaopen_ltn12ce_core(lua_State *L) {
     lua_createtable(L, 0, 0);
 
     // encryption/hashing
+    
+#ifdef BUILD_CRYPTO
     init_crypto(L);
     init_digest(L);
+#endif
 
     // compression
+
+#ifdef BUILD_BZIP2
     init_comp_bzip2(L);
+#endif
+
+#ifdef BUILD_LZMA
     init_comp_lzma(L);
-    init_comp_minilzo(L);
+#endif
+
+#ifdef BUILD_ZLIB
     init_comp_zlib(L);
+#endif
 
     return 1;
 }

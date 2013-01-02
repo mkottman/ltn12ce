@@ -1,3 +1,9 @@
+The PolarSSL source code is licensed under the GNU GPL v2. The Free and Open
+Source Software ("FOSS") License Exception at [1] allows us to distribute
+ltn12ce under the MIT/X11 license.
+
+[1] https://polarssl.org/foss-license-exception
+
 		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991
 

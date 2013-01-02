@@ -24,14 +24,6 @@ if ( BUILD_LZMA )
     add_subdirectory ( lzma )
 endif ( BUILD_LZMA )
 
-
-if ( BUILD_LZO )
-    list ( APPEND SOURCES ltn12ce_comp_minilzo.c )
-    list ( APPEND LIBRARIES minilzo )
-    add_definitions ( -DBUILD_LZO )
-    add_subdirectory ( minilzo )
-endif ( BUILD_LZO )
-
 if ( BUILD_ZLIB )
     list ( APPEND SOURCES ltn12ce_comp_zlib.c )
     list ( APPEND LIBRARIES zlib )

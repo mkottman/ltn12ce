@@ -27,9 +27,6 @@ void init_comp_bzip2(lua_State *L);
 #ifdef BUILD_LZMA
 void init_comp_lzma(lua_State *L);
 #endif
-#ifdef BUILD_LZO
-void init_comp_minilzo(lua_State *L);
-#endif
 #ifdef BUILD_ZLIB
 void init_comp_zlib(lua_State *L);
 #endif

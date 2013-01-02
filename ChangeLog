@@ -1,0 +1,9 @@
+ltn12ce, a Lua compression and encryption library
+
+= Version 0.2, released 2013-01-02
+
+Removed miniLZO (not a stream cipher anyway), and re-licensed to MIT/X11
+
+= Version 0.1, released 2013-01-01
+
+First release of the library, containing bzip2, miniLZO, PolarSSL, XZ (LZMA) and zlib

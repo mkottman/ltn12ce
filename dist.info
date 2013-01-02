@@ -1,7 +1,7 @@
 --- This file is part of LuaDist project
 
 name = "ltn12ce"
-version = "0.1"
+version = "0.2"
 
 desc = "ltn12ce is a compression and encryption library implementing ltn12 - filters, sources and sinks"
 author = "Michal Kottman"

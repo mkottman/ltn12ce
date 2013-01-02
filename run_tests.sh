@@ -1,8 +1,12 @@
 #!/bin/sh
-
-#set -x
-# /opt/luadist/bin/luadist make .
+set -e
+if [ ! -d "b" ]; then
+	mkdir b; cd b
+	cmake ..
+	cmake --build .
+	cd ..
+fi
 for f in test/*.lua; do
 	echo "==== $f ===="
-	/opt/luadist/bin/lua -e 'package.cpath=package.cpath..";b/src/?.so"' $f
+	lua -e 'package.cpath=package.cpath..";b/src/?.so"' $f
 done
