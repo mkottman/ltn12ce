@@ -132,7 +132,7 @@ static int lciphers(lua_State *L)
     for (; *list; i++, list++) {
         const cipher_info_t *info = cipher_info_from_type(*list);
         lua_pushstring(L, info->name);
-        lua_rawseti(L, -2, i);
+        lua_rawseti(L, -2, i+1);
     }
     return 1;
 }

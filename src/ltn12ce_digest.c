@@ -98,7 +98,7 @@ static int ldigests(lua_State *L)
     for (; *list; i++, list++) {
         const md_info_t *info = md_info_from_type(*list);
         lua_pushstring(L, info->name);
-        lua_rawseti(L, -2, i);
+        lua_rawseti(L, -2, i+1);
     }
     return 1;
 }
